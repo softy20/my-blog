@@ -1,3 +1,58 @@
 title: 꾸물렁 학습 노트
-remote_theme: volny/creative-theme-jekyll
+description: 개발을 배우면서 그날그날 정리한 것을 여기에 쌓습니다.
+url: "https://softy20.github.io"
 baseurl: "/my-blog"
+github_username: softy20
+
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+timezone: Asia/Seoul
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - markdown-test.md
+  - LICENCE
+
+hero:
+  heading: 꾸물렁 학습 노트
+  subheading: 개발을 배우면서 그날그날 정리한 것을 여기에 쌓습니다.
+  cta: 글 보러 가기
+
+about:
+  heading: 천천히, 꾸준히
+  cta: 배우는 중
+
+topics:
+  heading: 지금 배우는 것
+  items:
+    - icon: fa-code-fork
+      title: Git
+      text: 저장 지점을 남기고 되돌릴 수 있게 해주는 도구
+    - icon: fa-github
+      title: GitHub
+      text: 기록을 올리고 다른 사람과 코드를 나누는 곳
+    - icon: fa-file-text-o
+      title: 마크다운
+      text: 제목과 목록, 링크로 글을 구조화하는 문법
+    - icon: fa-pencil
+      title: 부트캠프
+      text: 그날그날 배운 것을 이 노트에 쌓는 중
+
+post_list:
+  heading: 지금까지 쓴 글
+  empty: 아직 올린 글이 없습니다.
+
+cta:
+  heading: 깃허브에서 이 블로그 보기
+  button: GitHub
+
+contact:
+  heading: 연락
+  text: 질문이나 피드백은 GitHub에서 남겨 주세요.

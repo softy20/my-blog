@@ -1,0 +1,33 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">메뉴 열기</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            {% if page.layout == 'front' %}
+            <a class="navbar-brand page-scroll" href="#page-top">{{ site.title }}</a>
+            {% else %}
+            <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+            {% endif %}
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                {% if page.layout == 'front' %}
+                <li><a class="page-scroll" href="#about">소개</a></li>
+                <li><a class="page-scroll" href="#topics">배우는 중</a></li>
+                <li><a class="page-scroll" href="#posts">글</a></li>
+                <li><a class="page-scroll" href="#contact">연락</a></li>
+                {% else %}
+                <li><a href="{{ '/' | relative_url }}#about">소개</a></li>
+                <li><a href="{{ '/' | relative_url }}#topics">배우는 중</a></li>
+                <li><a href="{{ '/' | relative_url }}#posts">글</a></li>
+                <li><a href="{{ '/' | relative_url }}#contact">연락</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

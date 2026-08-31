@@ -1,0 +1,38 @@
+<section class="no-padding" id="posts">
+    <div class="container posts-heading">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ site.post_list.heading }}</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    {% if site.posts.size == 0 %}
+    <div class="container text-center post-empty">
+        <p>{{ site.post_list.empty }}</p>
+    </div>
+    {% else %}
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            {% for post in site.posts %}
+            {% assign img_n = forloop.index0 | modulo: 6 | plus: 1 %}
+            <div class="col-lg-4 col-sm-6">
+                <a href="{{ post.url | relative_url }}" class="portfolio-box">
+                    <img src="{{ '/img/portfolio/' | append: img_n | append: '.jpg' | relative_url }}" class="img-responsive" alt="{{ post.title | escape }}">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                {{ post.date | date: "%Y.%m.%d" }}
+                            </div>
+                            <div class="project-name">
+                                {{ post.title }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</section>
