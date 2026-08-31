@@ -3,14 +3,14 @@
 
 @charset "utf-8";
 
-// 기준색 #8C9ED9 = hsl(226, 50%, 70%)
-// 채도는 고정하고 밝기만 바꿔 대비를 만든다.
-$theme-primary: #8C9ED9;
-$theme-primary-dark: #536EC6; // L 55%
-$theme-dark: #1A274D;         // L 20%
-$theme-text: #24346B;         // L 28%
-$theme-light: #E8ECF7;        // L 94%
-$theme-lighter: #F4F6FB;      // L 97%
+// vestris.ai풍 — warm, dependable, light 무드
+// 채도 낮은 테라코타 포인트 컬러 + 따뜻한 오프화이트 배경
+$theme-primary: #C1592C;      // accent (terracotta)
+$theme-primary-dark: #A64723; // accent hover/dark
+$theme-dark: #1C1B1A;         // near-black, headings & dark surfaces
+$theme-text: #33302B;         // body text
+$theme-light: #F1EBE2;        // soft warm tint surface
+$theme-lighter: #FAF8F4;      // page background
 
 @import
         "mixins",
