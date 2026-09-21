@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "화면 꺼지면 GPS가 끊기는 이유 — 실력 문제 vs 브라우저 정책"
-date: 2026-09-21 16:00:00 +0900
+date: 2026-09-21 15:10:00 +0900
 categories: [Exploration]
 tags: [geolocation, page-visibility-api, browser, web-platform]
 mermaid: true
