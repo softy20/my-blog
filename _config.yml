@@ -21,15 +21,18 @@ exclude:
   - LICENCE
 
 hero:
+  eyebrow: Dev Log
   heading: 꾸물렁 학습 노트
   subheading: 개발을 배우면서 그날그날 정리한 것을 여기에 쌓습니다.
   cta: 글 보러 가기
 
 about:
+  eyebrow: About
   heading: 천천히, 꾸준히
   cta: 배우는 중
 
 topics:
+  eyebrow: Currently Learning
   heading: 지금 배우는 것
   items:
     - icon: fa-code-fork
@@ -46,6 +49,7 @@ topics:
       text: 그날그날 배운 것을 이 노트에 쌓는 중
 
 post_list:
+  eyebrow: Posts
   heading: 지금까지 쓴 글
   empty: 아직 올린 글이 없습니다.
 
@@ -54,5 +58,6 @@ cta:
   button: GitHub
 
 contact:
+  eyebrow: Contact
   heading: 연락
   text: 질문이나 피드백은 GitHub에서 남겨 주세요.

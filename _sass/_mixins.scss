@@ -57,10 +57,10 @@
 
 @mixin sans-serif-font()
 {
-	font-family: 'Noto Sans KR', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 @mixin serif-font()
 {
-	font-family: 'Noto Serif KR', 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+	@include sans-serif-font;
 }

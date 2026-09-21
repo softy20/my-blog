@@ -1,9 +1,9 @@
-<section class="no-padding" id="posts">
+<section class="section-posts" id="posts">
     <div class="container posts-heading">
         <div class="row">
             <div class="col-lg-12 text-center">
+                <span class="eyebrow">{{ site.post_list.eyebrow }}</span>
                 <h2 class="section-heading">{{ site.post_list.heading }}</h2>
-                <hr class="primary">
             </div>
         </div>
     </div>
@@ -12,22 +12,19 @@
         <p>{{ site.post_list.empty }}</p>
     </div>
     {% else %}
-    <div class="container-fluid">
-        <div class="row no-gutter">
+    <div class="container">
+        <div class="row posts-grid">
             {% for post in site.posts %}
             {% assign img_n = forloop.index0 | modulo: 6 | plus: 1 %}
             <div class="col-lg-4 col-sm-6">
-                <a href="{{ post.url | relative_url }}" class="portfolio-box">
-                    <img src="{{ '/img/portfolio/' | append: img_n | append: '.jpg' | relative_url }}" class="img-responsive" alt="{{ post.title | escape }}">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                {{ post.date | date: "%Y.%m.%d" }}
-                            </div>
-                            <div class="project-name">
-                                {{ post.title }}
-                            </div>
-                        </div>
+                <a href="{{ post.url | relative_url }}" class="post-card wow fadeInUp"{% if forloop.index0 != 0 %} data-wow-delay=".{{ forloop.index0 | modulo: 3 }}s"{% endif %}>
+                    <div class="post-card-media">
+                        <img src="{{ '/img/portfolio/' | append: img_n | append: '.jpg' | relative_url }}" class="img-responsive" alt="{{ post.title | escape }}">
+                    </div>
+                    <div class="post-card-body">
+                        <span class="post-card-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                        <h3 class="post-card-title">{{ post.title }}</h3>
+                        <span class="post-card-link">더 읽기 →</span>
                     </div>
                 </a>
             </div>

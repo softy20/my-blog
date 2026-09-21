@@ -1,15 +1,15 @@
-<section id="contact">
+<section class="section-contact" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
+                <span class="eyebrow">{{ site.contact.eyebrow }}</span>
                 <h2 class="section-heading">{{ site.contact.heading }}</h2>
-                <hr class="primary">
                 <p>{{ site.contact.text }}</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="https://github.com/{{ site.github_username }}">
-                    <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p>{{ site.github_username }}</p>
+                <a href="https://github.com/{{ site.github_username }}" class="contact-link">
+                    <i class="fa fa-github"></i>
+                    <span>{{ site.github_username }}</span>
                 </a>
             </div>
         </div>
